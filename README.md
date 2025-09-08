@@ -79,4 +79,4 @@ Open the notebooks/evaluation.ipynb to test the trained model on validation/test
 ## ✨ Author  
 👤 **Mohamed Tawfik**  
 - Mechatronics Engineer | AI & Robotics Enthusiast  
-- [LinkedIn]([https://www.linkedin.com](https://www.linkedin.com/in/mohamed-tawfik11/)) | [GitHub]([https://github.com](https://github.com/MoTawfik11))  
+- [LinkedIn]([https://www.linkedin.com/in/mohamed-tawfik11/]) | [GitHub]([https://github.com/MoTawfik11])  
