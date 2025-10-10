@@ -1,0 +1,30 @@
+data:
+loader: video # 'video' or 'frames'
+train_csv: data/train.csv
+val_csv: data/val.csv
+T: 16
+resize: 256
+crop: 224
+
+
+training:
+model: cnn_rnn # options: simple3d, cnn_rnn, cnn_transformer
+epochs: 30
+batch_size: 8
+lr: 1e-4
+weight_decay: 1e-5
+device: cuda
+num_workers: 4
+save_dir: checkpoints
+
+
+model:
+emb_size: 512
+rnn_hidden: 256
+transformer_layers: 3
+transformer_heads: 8
+
+
+misc:
+seed: 42
+num_classes: 2
