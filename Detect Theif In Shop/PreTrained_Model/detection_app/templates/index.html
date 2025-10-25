@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shoplifter Detection</title>
+    <style>
+        body { font-family: Arial; text-align: center; background: #f5f5f5; }
+        form { margin: 40px auto; padding: 20px; background: white; width: 400px; border-radius: 10px; box-shadow: 0 0 10px #ccc; }
+        h2 { color: #333; }
+        .result { margin-top: 20px; font-size: 18px; }
+    </style>
+</head>
+<body>
+    <h2>🎥 Shoplifter Detection</h2>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if result %}
+    <div class="result">
+        <p><strong>Prediction:</strong> {{ result }}</p>
+        <p><strong>Confidence:</strong> {{ confidence }}%</p>
+    </div>
+    {% endif %}
+</body>
+</html>
